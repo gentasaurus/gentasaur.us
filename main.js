@@ -1,7 +1,7 @@
 /*
- * Main Javascript file.
- * Gent Semaj, GPLv3.
- * 4/27/2020
+* Main Javascript file.
+* Gent Semaj, GPLv3.
+* 4/27/2020
 */
 
 function resizeCanvas(canvas) {
@@ -31,6 +31,8 @@ function reset(ctx) {
 
 function paint(canvas) {
   var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#000000";
+  ctx.fillRect(-10, -10, canvas.width + 20, canvas.height + 20);
   ctx.fillStyle = "#FFFFFF";
   for(var s = 0; s < stars.length; s++) {
     var star = stars[s];
