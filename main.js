@@ -11,7 +11,6 @@ var ticksToNext = 17*3;
 
 var canvas = document.getElementById("canvas");
 resizeCanvas();
-spawnShip();
 initialize();
 
 function toStandard(bearing) {
